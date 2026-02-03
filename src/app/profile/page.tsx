@@ -1,4 +1,3 @@
-
 export default function page() {
-    <h1>Welcome</h1>
+    return <h1>Profile</h1>
 }
