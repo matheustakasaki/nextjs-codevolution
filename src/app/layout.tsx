@@ -1,5 +1,6 @@
 import Header from './header'
 import { Metadata } from 'next'
+import { ErrorWrapper } from '@/app/error-wrapprer';
 
 export const metadata: Metadata = {
   title: {
@@ -19,8 +20,11 @@ export default function RootLayout({
 
       <body>
         <Header />
-        {children}</body>
+        <ErrorWrapper>
+          {children}
+        </ErrorWrapper>
+
+      </body>
     </html>
   )
 }
- 
